@@ -1,0 +1,33 @@
+<c:FragmentDefinition
+    id="fragment"
+    xmlns="sap.m"
+    xmlns:c="sap.ui.core">
+
+    <Dialog id="idCarrierDialog"
+            draggable="true"
+            title="{i18n>titleDialog}">
+        <content>
+        <Table id="carrierTable" items="{/CarrierSet}">
+            <columns>
+                <Column id="col1"><Label id="label1" text="{i18n>columnTextId}"/></Column>
+                <Column id="col2"><Label id="label2" text="{i18n>columnTextName}"/></Column>
+                <Column id="col3"><Label id="label3" text="{i18n>columnTextCurrency}"/></Column>
+                <Column id="col4"><Label id="label4" text="{i18n>columnTextUrl}"/></Column>
+            </columns>
+            <items>
+                <ColumnListItem id="colListItem">
+                    <cells>
+                        <ObjectIdentifier id="objId" title="{Carrid}"></ObjectIdentifier>
+                        <Text id="text1" text="{Carrname}"/>
+                        <Text id="text2" text="{Currcode}"/>
+                        <Text id="text3" text="{Url}"/>
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+        </content>
+        <beginButton>
+        <Button text= "{i18n>textClose}" press=".onCloseDialog" />
+        </beginButton>
+    </Dialog>
+</c:FragmentDefinition>
