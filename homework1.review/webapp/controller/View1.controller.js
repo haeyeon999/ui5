@@ -8,7 +8,7 @@ sap.ui.define([
         "use strict";
 
         return Controller.extend("ui5.C20.homework1.review.controller.View1", {
-            onInit: function () {
+            onInit: function () { //
 
             }
         });
