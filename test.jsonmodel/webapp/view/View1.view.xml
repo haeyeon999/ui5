@@ -1,0 +1,36 @@
+<mvc:View controllerName="sync.c20.test.jsonmodel.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:c="sap.ui.core">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <l:VerticalLayout >
+                <Text text="{/text1}" />
+                <Text text = "{/text2}" />
+                <Text text = "{/text3}" />
+                <Text text = "{/text4}" /> 
+            </l:VerticalLayout>
+
+            <Input id = "idInput1"
+                value = "{
+                        path: '/int',
+                        type: 'sap.ui.model.type.Int' }" 
+                type = "Number"/> 
+
+            <Input id = "idInput2"
+                value = "{
+                        path: '/float',
+                        type: 'sap.ui.model.type.Float'}"
+                        type= "Number" />
+
+            <Text id = "idText" text="{/result}" />
+            <Button text="더하기" press=".onAdd" />
+
+            <ComboBox items="{/list}">
+                <c:Item text="{key}" key="{key}" >
+                </c:Item>
+            </ComboBox>
+        </content>
+    </Page>
+</mvc:View>

@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		},
+		{
+			"name": "test.ui.table",
+			"path": "../../../../ui5/test.ui.table"
+		}
+	],
+	"settings": {}
+}
